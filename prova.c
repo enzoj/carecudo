@@ -12,13 +12,13 @@ int main() {
    //entrada de dados
    do{
    
-    printf("==== POSTO SHELL ====\n");
+    printf("==== POSTO CARECUDO ====\n");
     printf("Digite o número correspondente à opção que deseja:\n");
     printf("1. Abastecimento\n2. Serviços\n3. Conversão de preços\n");
     printf("=====================\n");
     printf("Digite o número: ");
     scanf("%d", &opcao);
-    printf("\n==== POSTO SHELL ====\n");
+    printf("\n==== POSTO CARECUDO ====\n");
         
        switch (opcao){
            do{
@@ -30,7 +30,7 @@ int main() {
                 
                 
                 do{
-                    printf("\n==== POSTO SHELL ====\n");
+                    printf("\n==== POSTO CARECUDO ====\n");
                     printf("Se você deseja abastecer uma quantidade específica de litros, digite: 1\n");
                     printf("Se você deseja abastecer um valor específico em dinheiro, digite: 2\n");
                     printf("=====================\n");
@@ -53,31 +53,31 @@ int main() {
                         
                         if(abastecimento == 1){
                             total = 6.90 * litros; //calculando o preço da gasolina
-                            printf("\n==== POSTO SHELL ====\n");
+                            printf("\n==== POSTO CARECUDO ====\n");
                             printf("\nO valor do abastecimento será: %.2f\n", total);
                             printf("=====================\n");
                             
                         }else if(abastecimento == 2){
                             total = litros * 4.07; //calculando o preço do gás natural
-                            printf("\n==== POSTO SHELL ====\n");
+                            printf("\n==== POSTO CARECUDO ====\n");
                             printf("\nO valor do abastecimento será: %.2f\n", total);
                             printf("=====================\n");
                             
                         }else if(abastecimento == 3){
                             total = litros * 5.87; //calculando o preço do diesel
-                            printf("\n==== POSTO SHELL ====\n");
+                            printf("\n==== POSTO CARECUDO ====\n");
                             printf("\nO valor do abastecimento será: %.2f\n", total);
                             printf("=====================\n");
                             
                         }else if(abastecimento == 4){
                             total = litros * 4.04; //calculando o preço do etanol
-                            printf("\n==== POSTO SHELL ====\n");
+                            printf("\n==== POSTO CARECUDO ====\n");
                             printf("\nO valor do abastecimento será: %.2f\n", total);
                             printf("=====================\n");
                             
                         }else if(abastecimento == 5){
                             total = litros * 4.55; //calculando o preço do alcool
-                            printf("\n==== POSTO SHELL ====\n");
+                            printf("\n==== POSTO CARECUDO ====\n");
                             printf("\nO valor do abastecimento será: %.2f\n", total);
                             printf("=====================\n");
                             
@@ -89,31 +89,31 @@ int main() {
             
                         if(abastecimento == 1){
                             total = dinheiro / 6.90; //calculando o preço da gasolina
-                            printf("\n==== POSTO SHELL ====\n");
+                            printf("\n==== POSTO CARECUDO ====\n");
                             printf("\nA quantidade total de litros será: %.2f\n", total);
                             printf("=====================\n");
                             
                         }else if(abastecimento == 2){
                             total = dinheiro / 4.07; //calculando o preço do gás natural
-                            printf("\n==== POSTO SHELL ====\n");
+                            printf("\n==== POSTO CARECUDO ====\n");
                             printf("\nA quantidade total de metros cúbicos será: %.2f\n", total);
                             printf("=====================\n");
                             
                         }else if(abastecimento == 3){
                             total = dinheiro / 5.87; //calculando o preço do diesel
-                            printf("\n==== POSTO SHELL ====\n");
+                            printf("\n==== POSTO CARECUDO ====\n");
                             printf("\nA quantidade total de litros será: %.2f\n", total);
                             printf("=====================\n");
                             
                         }else if(abastecimento == 4){
                             total = dinheiro / 4.04; //calculando o preço do etanol
-                            printf("\n==== POSTO SHELL ====\n");
+                            printf("\n==== POSTO CARECUDO ====\n");
                             printf("\nA quantidade total de litros será: %.2f\n", total);
                             printf("=====================\n");
                             
                         }else if(abastecimento == 5){
                             total = dinheiro / 4.55; //calculando o preço do alcool
-                            printf("\n==== POSTO SHELL ====\n");
+                            printf("\n==== POSTO CARECUDO ====\n");
                             printf("\nA quantidade total de litros será: %.2f\n", total);
                             printf("=====================\n");
                             
@@ -200,3 +200,15 @@ int main() {
 
     return 0;
 }
+
+/*Desenvolver um programa em linguagem C que simule o funcionamento de um posto de gasolina, permitindo abastecimento com diferentes tipos de combustíveis e execuções de serviços como: troca de óleo, higienização do veículo e serviço de borracharia.O programa deve simular situações de abastecimento com diversos tipos de combustíveis, uso dos serviços oferecidos pelo posto e aplicações de descontos para usuários que realizarem uma quantidade específica de serviços do mesmo tipo.
+
+⦁	Crie  um programa modularizado em C, dividido em 3 módulos: abastecimento, serviços e conversão de preços.
+⦁	Programa deve permitir o abastecimento de combustíveis (álcool, gasolina, gás natural) com valores fixos determinados.
+⦁	No módulo de serviços,O programa devem implementar submenus para troca de óleo, higienização do veículo e serviços de borracharia, com a opção de um ou mais serviços.
+⦁	Os valores de cada serviço devem ser fixos, e o usuário pode escolher um ou mais tipos de serviço.
+⦁	Se um usuário realizar 10 serviços do mesmo tipo, receberá descontos  no valor total dos serviços adcionais de mesmo tipo.
+⦁	O aluno deve implementar um módulo para alteração de preço, solicitando o tipo do combustível, o valor antigo e o novo valor.
+⦁	Todas as perguntas do questionário deverão ser respondidas em um programa em C.
+⦁	Não serão permitidos uso de estruturas como : structs, functions e arrays.  
+⦁	Serão permitas estruturas com IF, ELSE, SWITCH-CASE, FOR, WHILE, DO-WHILE, OPERADORES ARITÉTICOS, RELACIONAIS E  LÓGICOS*/
